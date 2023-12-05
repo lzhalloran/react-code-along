@@ -1,14 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import { useContext } from "react";
+import { ApiContext } from "ApiProvider.jsx";
 
 function App() {
+  let apiUrl = useContext(ApiContext);
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p>In context: {apiUrl}</p>
         <a
           className="App-link"
           href="https://reactjs.org"
