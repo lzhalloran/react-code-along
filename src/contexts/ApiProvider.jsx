@@ -3,7 +3,7 @@
 
 import { createContext } from "react";
 
-const ApiContext = createContext("https://pokeapi.co/api/v2/");
+export const ApiContext = createContext("https://pokeapi.co/api/v2/");
 
 export function ApiProvider(props) {
   return (
