@@ -8,3 +8,5 @@
 - Nice-to-haves:
     - [ ] CSS framework (eg. React Bootstrap)
     - [ ] API that uses other HTTP verbs (eg. fetch with POST/PUT/DELETE)
+
+Deployed at https://roaring-choux-ad83b2.netlify.app
