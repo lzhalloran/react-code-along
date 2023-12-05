@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useContext } from "react";
-import { ApiContext } from "ApiProvider.jsx";
+import { ApiContext } from "./contexts/ApiProvider.jsx";
 
 function App() {
   let apiUrl = useContext(ApiContext);
