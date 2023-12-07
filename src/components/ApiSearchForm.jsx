@@ -3,12 +3,12 @@ import { ApiContext } from "../contexts/ApiProvider";
 import { PokemonTeamContext } from "../contexts/PokemonDataProvider";
 
 export function ApiSearchForm() {
-  let apiUrlBase = useContext(ApiContext);
+  let {url} = useContext(ApiContext);
   let pokemonDataArray = useContext(PokemonTeamContext);
   let [searchData, setSearchData] = useState("pikachu");
 
   const searchForPokemon = async () => {
-    let response = await fetch(apiUrlBase + "pokemon/" + searchData);
+    let response = await fetch(url + "pokemon/" + searchData);
     let data = await response.json();
     pokemonDataArray.push(data);
   };
