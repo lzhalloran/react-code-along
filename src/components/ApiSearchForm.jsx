@@ -10,7 +10,7 @@ export function ApiSearchForm() {
   const searchForPokemon = async () => {
     let response = await fetch(url + "pokemon/" + searchData);
     let data = await response.json();
-    setTeam([...team, data]);
+    setTeam([...team, { id: new Date(Date.now()).getTime(), pokemon: data }]);
   };
 
   return (
